@@ -7,13 +7,11 @@ describe('flattener', function () {
     const simple = [1, 2, 3, 4]
     const moreComplex = [[1,2,[3]],4]
     const stillMoreComplex = [[1,[[2]],[3]],4]
-    const wayMoreComplex = [[1], [2, [3, 4, [5]]], [6, [7]]]
-
-    console.log(flattener(simple))
+    const wayMoreComplex = [[1, [2, [3]]], [4, [5, [6]]]]
 
     assert.deepEqual(flattener(simple), [ 1, 2, 3, 4 ], 'The simplest case.')
     assert.deepEqual(flattener(moreComplex), [1, 2, 3, 4], 'The more complex case.')
     assert.deepEqual(flattener(stillMoreComplex), [1, 2, 3, 4], 'The still more complex case.')
-    assert.deepEqual(flattener(simple), [1, 2, 3, 4], 'The way more complex case.')
+    assert.deepEqual(flattener(wayMoreComplex), [1, 2, 3, 4, 5, 6], 'The way more complex case.')
   });
 });
