@@ -6,4 +6,4 @@ Testing:
 
 * To run the tests, clone down this repo, `npm install`, and then `npm run test` or `mocha`.
 * The tests will run, and the results will appear in the terminal. If the install was correct and no code is altered from the repo, all four tests will pass.
-* The tests cover several input cases to ensure that the function works. 
+* The tests cover several input cases to ensure that the function works.
