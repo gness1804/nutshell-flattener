@@ -12,7 +12,7 @@ describe('flattener', function () {
     console.log(flattener(simple))
 
     assert.deepEqual(flattener(simple), [ 1, 2, 3, 4 ], 'The simplest case.')
-    // assert.strictEqual(flattener(moreComplex), [1, 2, 3, 4], 'The more complex case.')
+    assert.deepEqual(flattener(moreComplex), [1, 2, 3, 4], 'The more complex case.')
     // assert.strictEqual(flattener(stillMoreComplex), [1, 2, 3, 4], 'The still more complex case.')
     // assert.strictEqual(flattener(simple), [1, 2, 3, 4], 'The way more complex case.')
   });
