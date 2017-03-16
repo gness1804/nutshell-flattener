@@ -1,4 +1,4 @@
-##Nutshell Flattener Challenge
+Nutshell Flattener Challenge
 
 This is an array flattening function. When one inputs any array of arrays, it will flatten it into a single array. Example: `[[1,[[2]],[3]],4]` returns `[[1,[[2]],[3]],4]`.
 
